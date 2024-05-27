@@ -24,7 +24,7 @@ rollback
 COMMIT
 
 --TOTAL CASE VS TOTAL DEATH
---Death percentage (showing the death percentage each day in 2020-2021)
+--Death percentage (showing the death percentage each day)
 SELECT location, datecol, total_cases, total_deaths, (CAST(total_deaths as float)/CAST(total_cases as float))*100 as DeathPercentage
 FROM CovidDeaths
 WHERE total_cases <> 0
